@@ -36,41 +36,13 @@
     
     NSLog(@"xxx0000");
     
-    //NSLog(@"更改了一些东西");
-    
-    
-    //AAAAAAAAAAAAAAPPPPPPPPPPPPP
-    
-    
-    //44444444
-    
-    
-    
-    //////////55555555555555
-    
-    
-    
-    
-    
-    
-    //66666666666666666666
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     
     
-    //打印一下子 ~~~~~~
-    
-    
-    
-    //打印第二下
-    
-    
-    //我曹  打印第三下
-    
-    
-    //我曹  打印地四下
+
 }
 
 
