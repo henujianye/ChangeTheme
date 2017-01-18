@@ -32,6 +32,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    NSLog(@"xxx0000");
+    
     //NSLog(@"更改了一些东西");
     
 }
