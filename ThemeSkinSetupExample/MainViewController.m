@@ -32,6 +32,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //NSLog(@"更改了一些东西");
+    
 }
 
 - (void)didReceiveMemoryWarning {
