@@ -56,7 +56,8 @@ static ThemeManager * sharedThemeManager;
         return resourcePath;
     }
     
-    
+   // NSString * themeSubPath = [[NSBundle mainBundle] pathForResource:@"Assets.xcassets/tab_1" ofType:nil];
+
     NSString * themeSubPath = [self.themePlistDict objectForKey:self.themeName];    // Skins/blue
     NSString * themeFilePath = [resourcePath stringByAppendingPathComponent:themeSubPath]; // .../Skins/blue
     

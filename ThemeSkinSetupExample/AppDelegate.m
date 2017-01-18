@@ -28,6 +28,24 @@
     return YES;
 }
 
+//长链接
+
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray *restorableObjects))restorationHandler{
+    if ([userActivity.activityType isEqualToString:NSUserActivityTypeBrowsingWeb]) {
+        NSURL *webUrl = userActivity.webpageURL;
+        if ([webUrl.host isEqualToString:@""]) {
+            //打开对应页面
+        }else{
+            //不能识别 safari打开
+            [[UIApplication sharedApplication] openURL:webUrl];
+        }
+    }
+    
+    return YES;
+}
+
+
+
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
@@ -57,5 +75,4 @@
     ThemeManager * themeManager = [ThemeManager sharedThemeManager];
     themeManager.themeName = themeName;
 }
-
 @end

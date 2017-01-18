@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14C0C6091E27680B00EA5C67 /* themetab.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14C0C6081E27680B00EA5C67 /* themetab.plist */; };
 		9A5A86641C58C7EB000E0390 /* tabbar_discover_highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A5A864C1C58C7EB000E0390 /* tabbar_discover_highlighted.png */; };
 		9A5A86651C58C7EB000E0390 /* tabbar_discover_highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A5A864D1C58C7EB000E0390 /* tabbar_discover_highlighted@2x.png */; };
 		9A5A86661C58C7EB000E0390 /* tabbar_discover_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A5A864E1C58C7EB000E0390 /* tabbar_discover_selected.png */; };
@@ -77,6 +78,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14AB85301E28A808004838F6 /* ThemeSkinSetupExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ThemeSkinSetupExample.entitlements; sourceTree = "<group>"; };
+		14C0C6081E27680B00EA5C67 /* themetab.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = themetab.plist; sourceTree = "<group>"; };
 		9A5A864C1C58C7EB000E0390 /* tabbar_discover_highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar_discover_highlighted.png; sourceTree = "<group>"; };
 		9A5A864D1C58C7EB000E0390 /* tabbar_discover_highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_discover_highlighted@2x.png"; sourceTree = "<group>"; };
 		9A5A864E1C58C7EB000E0390 /* tabbar_discover_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar_discover_selected.png; sourceTree = "<group>"; };
@@ -258,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				9A6ACDA81C58D29C007F69B0 /* theme.plist */,
+				14C0C6081E27680B00EA5C67 /* themetab.plist */,
 			);
 			name = plist;
 			sourceTree = "<group>";
@@ -285,6 +289,7 @@
 		9A6C87941C58BF22003C819A /* ThemeSkinSetupExample */ = {
 			isa = PBXGroup;
 			children = (
+				14AB85301E28A808004838F6 /* ThemeSkinSetupExample.entitlements */,
 				9A6ACD9D1C58CF3C007F69B0 /* README */,
 				9A6C87C81C58BF3F003C819A /* Main */,
 				9A6C87C91C58BF57003C819A /* ViewController */,
@@ -445,6 +450,11 @@
 					9A6C87911C58BF22003C819A = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 7223RL7X44;
+						SystemCapabilities = {
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+						};
 					};
 					9A6C87AA1C58BF22003C819A = {
 						CreatedOnToolsVersion = 7.2;
@@ -507,6 +517,7 @@
 				9A5A86691C58C7EB000E0390 /* tabbar_discover@2x.png in Resources */,
 				9AF9ED151DBDE92800D52CED /* ScreenShot in Resources */,
 				9A6ACD9E1C58CF3C007F69B0 /* README in Resources */,
+				14C0C6091E27680B00EA5C67 /* themetab.plist in Resources */,
 				9A5A86761C58C7EB000E0390 /* tabbar_profile_highlighted.png in Resources */,
 				9A6C87A21C58BF22003C819A /* Assets.xcassets in Resources */,
 				9A5A867A1C58C7EB000E0390 /* tabbar_profile.png in Resources */,
@@ -691,10 +702,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ThemeSkinSetupExample/ThemeSkinSetupExample.entitlements;
 				DEVELOPMENT_TEAM = 7223RL7X44;
 				INFOPLIST_FILE = ThemeSkinSetupExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.vbirdbest.ThemeSkinSetupExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vbirdbest.Theme;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -703,10 +715,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ThemeSkinSetupExample/ThemeSkinSetupExample.entitlements;
 				DEVELOPMENT_TEAM = 7223RL7X44;
 				INFOPLIST_FILE = ThemeSkinSetupExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.vbirdbest.ThemeSkinSetupExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vbirdbest.Theme;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
