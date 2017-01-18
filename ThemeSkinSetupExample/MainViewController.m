@@ -33,6 +33,7 @@
     [super viewDidLoad];
     
     
+    
     NSLog(@"xxx0000");
     
     //NSLog(@"更改了一些东西");
@@ -41,6 +42,9 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+    
+    
+    //打印一下子 ~~~~~~
 }
 
 
